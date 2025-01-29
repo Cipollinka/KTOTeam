@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "The Evolution of Football Rules",
+    "descriptionShort": "Explore the fascinating history of football's rule changes.",
+    "descriptionLong": "Football, as we know it today, has undergone significant transformations since its inception. From the introduction of the offside rule to advancements in VAR technology, this article delves deep into the evolution of the rules that shape the game.",
+    "image": "https://the18.com/sites/default/files/styles/twitter_card_image/public/list-item-feature-images/20170815-The18-Image-Rules-Goal-Kick.jpg?itok=T-_hlpOO",
+    "category": "rules"
+  },
+  {
+    "id": 2,
+    "title": "Building a Winning Football Team",
+    "descriptionShort": "Key strategies for assembling a successful football team.",
+    "descriptionLong": "What makes a football team great? This article covers essential factors such as recruitment, training, teamwork, and leadership to guide coaches and managers in creating a winning squad.",
+    "image": "https://www.bennionkearny.com/wp-content/uploads/2019/10/building-a-soccer-team.jpg",
+    "category": "advices"
+  },
+  {
+    "id": 3,
+    "title": "Mastering Football Tactics",
+    "descriptionShort": "An in-depth guide to football tactics and formations.",
+    "descriptionLong": "From the classic 4-4-2 to the dynamic 3-5-2, this article explains popular football formations and how to adapt tactics to outsmart your opponents during a match.",
+    "image": "https://brilanet.s3.amazonaws.com/wp-content/uploads/2023/11/25200523/AB807F98-EE2D-415A-9611-773A60F38D79.jpeg",
+    "category": "advices"
+  },
+  {
+    "id": 4,
+    "title": "A Coach's Guide to Training Drills",
+    "descriptionShort": "Effective drills to improve player performance.",
+    "descriptionLong": "Coaches can elevate their teams with these tried-and-tested training drills. This article covers drills for passing, shooting, defending, and building team chemistry on the pitch.",
+    "image": "https://www.sportsessionplanner.com/uploads/images/session_transitions/1178485.jpg",
+    "category": "advices"
+  },
+  {
+    "id": 5,
+    "title": "Understanding Football Officiating",
+    "descriptionShort": "Learn the ins and outs of football refereeing.",
+    "descriptionLong": "Referees play a critical role in maintaining fairness on the field. Discover the duties of referees, the most common challenges they face, and how technology is shaping the future of officiating.",
+    "image": "https://cdn.vox-cdn.com/thumbor/lXtP3DlMwGpVur_QQvCooSygrnE=/0x0:3450x1725/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/13268507/77175330.jpg.jpg",
+    "category": "rules"
+  },
+  {
+    "id": 6,
+    "title": "Nutrition and Fitness for Football Players",
+    "descriptionShort": "A comprehensive guide to optimizing performance through diet and exercise.",
+    "descriptionLong": "Success on the football field begins with proper nutrition and fitness. This article explores meal plans, hydration tips, and fitness routines tailored for football players to stay in peak condition.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9cfGQcna-22kP6QzzC5ppqAanPnlxaH0h4A&s",
+    "category": "advices"
+  },
+  {
+    "id": 7,
+    "title": "Top Football Rivalries of All Time",
+    "descriptionShort": "Discover the most intense rivalries in football history.",
+    "descriptionLong": "Football is fueled by rivalries that captivate fans worldwide. From El Clásico to the Manchester Derby, we delve into the stories behind these legendary matches.",
+    "image": "https://soccernet.ng/app/uploads/2023/12/Screenshot-2023-12-05-at-14.30.19.png",
+    "category": "inventory"
+  },
+  {
+    "id": 8,
+    "title": "The Role of Goalkeepers in Modern Football",
+    "descriptionShort": "Examining how the goalkeeper position has evolved over time.",
+    "descriptionLong": "Modern goalkeepers are more than just shot-stoppers. Learn how their role has expanded to include ball distribution, leadership, and even scoring goals in critical moments.",
+    "image": "https://d3rqy6w6tyyf68.cloudfront.net/AcuCustom/Sitename/DAM/135/scw-126-a-deep-dive-into-a-goalkeepers-roles-1.png",
+    "category": "advices"
+  },
+  {
+    "id": 9,
+    "title": "Grassroots Football: Building the Future",
+    "descriptionShort": "The importance of grassroots initiatives in shaping football's future.",
+    "descriptionLong": "Grassroots football is essential for developing young talent and fostering community spirit. This article highlights programs, challenges, and opportunities in grassroots football worldwide.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGXmNR436oAOTitFuSUlJ0fxGlhGuJhJIZEw&s",
+    "category": "inventory"
+  },
+  {
+    "id": 10,
+    "title": "Breaking Down the Best World Cup Moments",
+    "descriptionShort": "Relive the unforgettable moments from football's biggest stage.",
+    "descriptionLong": "From stunning goals to dramatic comebacks, the FIFA World Cup has given us countless memories. This article revisits the most iconic moments in World Cup history.",
+    "image": "https://i.insider.com/639f56e4b5600000185b3a78?width=700",
+    "category": "inventory"
+  }
+]
