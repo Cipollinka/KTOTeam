@@ -24,17 +24,17 @@ const menuItems: MenuItemProps[] = [
   {
     title: 'Terms of use',
     Icon: TOSIcon,
-    value: 'https://www.termsfeed.com/live/248be767-f29b-448d-b80d-dc7f10f1b367',
+    value: 'https://google.com',
   },
   {
     title: 'Developer website',
     Icon: WebsiteIcon,
-    value: 'https://www.termsfeed.com/live/248be767-f29b-448d-b80d-dc7f10f1b367',
+    value: 'https://google.com',
   },
   {
     title: 'Privacy policy',
     Icon: PrivacyIcon,
-    value: 'https://www.termsfeed.com/live/248be767-f29b-448d-b80d-dc7f10f1b367',
+    value: 'https://google.com',
   },
 ];
 
@@ -177,6 +177,31 @@ export default function ProfileScreen() {
               value={item.value}
             />
           ))}
+          <Button
+            variant="danger"
+            title="Delete Account"
+            isDisabled={isDisabled || isEditing}
+            onPress={() => {
+              Alert.alert(
+                'Are you sure?',
+                'You will delete all your personal data.',
+                [
+                  {
+                    text: 'Cancel',
+                    style: 'cancel',
+                  },
+                  {
+                    text: 'Delete',
+                    style: 'destructive',
+                    onPress: () => {
+                      setUser({name: '', about: '', image: ''});
+                      setFormData({name: '', about: '', image: ''});
+                    },
+                  },
+                ],
+              );
+            }}
+          />
         </View>
       </ScrollView>
 
