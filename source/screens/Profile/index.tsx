@@ -22,16 +22,6 @@ import BottomNavigation from '@/components/BottomNavigation';
 
 const menuItems: MenuItemProps[] = [
   {
-    title: 'Terms of use',
-    Icon: TOSIcon,
-    value: 'https://www.termsfeed.com/live/248be767-f29b-448d-b80d-dc7f10f1b367',
-  },
-  {
-    title: 'Developer website',
-    Icon: WebsiteIcon,
-    value: 'https://www.termsfeed.com/live/248be767-f29b-448d-b80d-dc7f10f1b367',
-  },
-  {
     title: 'Privacy policy',
     Icon: PrivacyIcon,
     value: 'https://www.termsfeed.com/live/248be767-f29b-448d-b80d-dc7f10f1b367',
