@@ -6,12 +6,15 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import ScreensContainer from './source/components/ScreensContainer';
 
 import './global.css';
+import {AutocompleteDropdownContextProvider} from 'react-native-autocomplete-dropdown';
 
 function App(): React.JSX.Element {
   return (
     <GestureHandlerRootView>
       <SafeAreaProvider>
-        <ScreensContainer />
+        <AutocompleteDropdownContextProvider>
+          <ScreensContainer />
+        </AutocompleteDropdownContextProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

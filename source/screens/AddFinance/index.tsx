@@ -24,8 +24,6 @@ export default function AddFinance({route}: any) {
   const isDisabled = !formData.name || !formData.amount || !formData.date;
 
   const handleSavePress = () => {
-    console.log('formData.date.toISOString()', formData.date.toISOString());
-
     addFinances({
       ...formData,
       date: formData.date.toISOString(),

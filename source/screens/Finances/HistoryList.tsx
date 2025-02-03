@@ -18,8 +18,6 @@ export default function HistoryList({
   setSelectedIds,
   isEditing,
 }: HistoryListProps) {
-  console.log('items', items);
-
   const groupedByDate = items.reduce((acc, item) => {
     const formatterData = dayjs(item.date).format('DD MMM');
     // item.date = formatterData;

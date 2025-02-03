@@ -68,7 +68,7 @@ export interface Training {
   id: number;
   name: string;
   description: string;
-  address: string;
+  address: Address;
   date: string;
   time: string;
   isSelected?: boolean;
@@ -88,7 +88,7 @@ export interface FormInputProps {
 export interface TrainingFormData {
   name: string;
   description: string;
-  address: string;
+  address: Address | null;
   date: string;
   time: string;
   notifications: boolean;
@@ -156,4 +156,9 @@ export interface Finance {
   amount: number;
   date: string;
   isBuy: boolean;
+}
+
+export interface Address {
+  id: string;
+  title: string;
 }

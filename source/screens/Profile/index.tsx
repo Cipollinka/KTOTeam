@@ -22,9 +22,19 @@ import BottomNavigation from '@/components/BottomNavigation';
 
 const menuItems: MenuItemProps[] = [
   {
+    title: 'Terms of use',
+    Icon: TOSIcon,
+    value: 'https://google.com',
+  },
+  {
+    title: 'Developer website',
+    Icon: WebsiteIcon,
+    value: 'https://google.com',
+  },
+  {
     title: 'Privacy policy',
     Icon: PrivacyIcon,
-    value: 'https://www.termsfeed.com/live/248be767-f29b-448d-b80d-dc7f10f1b367',
+    value: 'https://google.com',
   },
 ];
 

@@ -9,13 +9,14 @@ import BackButton from '@/components/BackButton';
 import FormDateInput from '@/components/FormDateInput';
 import {useUserStore} from '@/store/userStore';
 import {useNavigation} from '@react-navigation/native';
+import GooglePlacesSearch from '@/components/PlacesSearch';
 
 export const AddTrainingScreen: React.FC = ({route}: any) => {
   const nav = useNavigation<RoutesT>();
   const [formData, setFormData] = useState<TrainingFormData>({
     name: '',
     description: '',
-    address: '',
+    address: {id: '', title: ''},
     date: new Date(),
     notifications: false,
   });
@@ -28,7 +29,7 @@ export const AddTrainingScreen: React.FC = ({route}: any) => {
   const isDisabled =
     !formData.name ||
     !formData.description ||
-    !formData.address ||
+    !formData.address?.title ||
     !formData.date;
 
   useLayoutEffect(() => {
@@ -37,7 +38,7 @@ export const AddTrainingScreen: React.FC = ({route}: any) => {
         ...prev,
         name: training.name,
         description: training.description,
-        address: training.address,
+        address: training?.address,
         date: new Date(training.date),
         notifications: training.notifications,
       }));
@@ -80,11 +81,10 @@ export const AddTrainingScreen: React.FC = ({route}: any) => {
           placeholder="Enter description"
         />
 
-        <FormInput
-          label="Address"
-          value={formData.address}
-          onChange={value => setFormData({...formData, address: value})}
-          placeholder="Enter address"
+        <GooglePlacesSearch
+          apiKey={'AIzaSyBHo-nFVvTGd1LfpdBL4WXNgXJH8LNCWW8'}
+          address={formData.address}
+          onSelect={address => setFormData({...formData, address})}
         />
 
         <FormDateInput

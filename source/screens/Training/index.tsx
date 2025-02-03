@@ -1,7 +1,14 @@
 import ScreenWrapper from '@/components/ScreenWrapper';
 import Button from '@/components/ui/Button';
 import React, {useMemo, useState} from 'react';
-import {View, Text, TouchableOpacity, Linking, ScrollView} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Linking,
+  ScrollView,
+  Platform,
+} from 'react-native';
 
 import EmptyData from '@/components/ui/Empty';
 import {RoutesT, Routes, Training} from '@/types/general';
@@ -36,15 +43,23 @@ export default function TrainingsScreen() {
   );
   const isEmpty = data.length === 0;
 
-  const handleMapOpen = (address: string) => {
-    const encodedAddress = encodeURIComponent(address);
-    Linking.openURL(
-      `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`,
-    );
+  const handleMapOpen = (place_id: string) => {
+    const googleMapsUrl = `https://www.google.com/maps/search/?q=place_id:${place_id}`;
+    const appleMapsUrl = `http://maps.apple.com/?q=place_id:${place_id}`;
+
+    const url = Platform.select({
+      ios: googleMapsUrl,
+      android: googleMapsUrl,
+    });
+
+    if (url) {
+      Linking.openURL(url).catch(err =>
+        console.error('Error opening map:', err),
+      );
+    }
   };
 
   const onMenuCancel = () => setCurrentItem(null);
-  console.log('currentItem', currentItem);
 
   return (
     <ScreenWrapper>

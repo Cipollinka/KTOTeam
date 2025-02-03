@@ -32,7 +32,7 @@ export const TrainingCard: React.FC<TrainingCardProps> = ({
           <Text className="text-sm text-white">{training.description}</Text>
           <View className="gap-1 items-center w-full text-xs text-neutral-400">
             <Text className="self-stretch my-auto text-white-50">
-              {training.address}
+              {training.address.title}
             </Text>
           </View>
         </View>
@@ -48,7 +48,7 @@ export const TrainingCard: React.FC<TrainingCardProps> = ({
       </View>
 
       <TouchableOpacity
-        onPress={() => onMapOpen(training.address)}
+        onPress={() => onMapOpen(training.address.id)}
         className="overflow-hidden gap-2.5 self-stretch px-5 py-1.5 mt-4 w-full leading-6 text-center text-white border border-white border-solid min-h-[32px] rounded-[100px] items-center"
         accessibilityLabel={`Open Google Maps for ${training.name}`}
         accessibilityRole="button">
