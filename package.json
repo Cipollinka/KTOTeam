@@ -46,6 +46,7 @@
     "@react-native/typescript-config": "0.77.0",
     "@types/jest": "^29.5.13",
     "@types/lodash": "^4.17.15",
+    "@types/lodash.debounce": "^4.0.9",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "eslint": "^8.19.0",
